@@ -1,0 +1,11 @@
+A description of the problem and a discussion of the background. (15 marks)
+•	Problem: To predict the severity of any car accident given a pool of dependent variables including weather conditions, light conditions, road conditions etc.
+•	Discussion of the background: Road accidents happen everyday and there may be certain common factors that contribute to an increased likelihood of getting into an accident that is severe. By being able to predict the severity of an accident and the likelihood of getting into one, one is then able to gauge if one should change route of travel or avoid traveling if conditions are poor. This can help to reduce the number of accidents and injuries.
+
+A description of the data and how it will be used to solve the problem. (15 marks)
+•	Data given include the date, time of accident, how the accident happened, what the prevailing road, light, weather conditions were, whether the driver was under influence/whether the accident was caused by inattention
+•	Using all the data provided
+o	Convert the categorical variables into label encoders
+o	Upsample the data to remove data imbalance
+o	With the target variable of just severity code 1,2, use a decision tree model to form a model for prediction
+
