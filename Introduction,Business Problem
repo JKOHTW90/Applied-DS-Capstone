@@ -5,7 +5,7 @@ A description of the problem and a discussion of the background. (15 marks)
 
 A description of the data and how it will be used to solve the problem. (15 marks)
 •	Data given include the date, time of accident, how the accident happened, what the prevailing road, light, weather conditions were, whether the driver was under influence/whether the accident was caused by inattention
-•	Using all the data provided
+•	Using all the data provided in the Example dataset (source of my data)
   o	Convert the categorical variables into label encoders
   o	Upsample the data to remove data imbalance
   o	With the target variable of just severity code 1,2, use a decision tree model to form a model for prediction
