@@ -25,23 +25,42 @@ Data cleansing
 •	There is a repeat column in that of SEVERITYCODE.1 which I dropped from my dataset. Also, in my opinion, certain columns (such as coordinates, object ID) were probably not very useful in predicting the severity of an accident – I opine that knowing the nature of the location of an accident (intersection, block) for example is more useful in determining the severity of an accident rather that the specific X,Y coordinates. I therefore dropped those columns as well.
 •	I added two new columns – Day of Week and Time of Day – as I think that during certain day of the week, traffic is probably more busy and therefore severity of an accident may increase. Similarly time of day may be important too as visibility at night is lower than in the day and people may be more tired as well. Therefore these two new columns are added using information from the Incident dates and incident time columns.
 
-Final feature selection
-Kept features						Dropped features						Added features
-ADDRTYPE								X														DAYOFWEEK
-COLLISIONTYPE						Y														TIMEOFDAY
-PERSONCOUNT							INCKEY	
-PEDCOUNT								COLDETKEY	
-PEDCYLCOUNT							REPORTNO	
-VEHCOUNT								STATUS	
-JUNCTIONTYPE						INTKEY	
-SDOT_COLCODE						LOCATION	
-INATTENTIONIND					EXCEPTRSNCODE	
-UNDERINFL								EXCEPTRSNDESC	
-WEATHER									SEVERITYCODE.1	
-ROADCOND								INCDATE	
-LIGHTCOND								INCDTTM	
-PEDROWNOTGRNT						SDOTCOLNUM	
-SPEEDING								SEGLANEKEY	
-HITPARKEDCAR						CROSSWALKKEY	
+Kept features
+ADDRTYPE
+COLLISIONTYPE
+PERSONCOUNT
+PEDCOUNT
+PEDCYLCOUNT
+VEHCOUNT
+JUNCTIONTYPE
+SDOT_COLCODE
+INATTENTIONIND
+UNDERINFL
+WEATHER
+ROADCOND
+LIGHTCOND
+PEDROWNOTGRNT
+SPEEDING
+HITPARKEDCAR
 
+Dropped features
+X
+Y
+INCKEY
+COLDETKEY
+REPORTNO
+STATUS
+INTKEY
+LOCATION
+EXCEPTRSNCODE
+EXCEPTRSNDESC
+SEVERITYCODE.1
+INCDATE
+INCDTTM
+SDOTCOLNUM
+SEGLANEKEY
+CROSSWALKKEY
 
+Added features
+DAYOFWEEK
+TIMEOFDAY
